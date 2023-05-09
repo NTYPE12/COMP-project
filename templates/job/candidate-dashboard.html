@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Work Stocks - Innovative & Modern Job Board Template</title>
+
+    <!-- All Plugins Css -->
+    <link href="/static/assets/css/plugins.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/static/assets/css/styles.css" rel="stylesheet">
+
+    <!-- Custom Color -->
+    <link href="/static/assets/css/skin/default.css" rel="stylesheet">
+</head>
+
+<body class="green-skin">
+<!-- ============================================================== -->
+<!-- Preloader - style you can find in spinners.css -->
+<!-- ============================================================== -->
+<div class="Loader"></div>
+
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper">
+
+    <!-- ============================================================== -->
+    <!-- Top header  -->
+    <!-- ============================================================== -->
+    <!-- Start Navigation -->
+    <div class="header header-light">
+        <div class="container-fluid">
+            <nav id="navigation" class="navigation navigation-landscape">
+                <div class="nav-header">
+                    <a class="nav-brand" href="#">
+                        <img src="/static/assets/img/logo.png" class="logo" alt=""/>
+                    </a>
+                    <div class="nav-toggle"></div>
+                </div>
+                <div class="nav-menus-wrapper" style="transition-property: none;">
+{#                    <ul class="nav-menu">#}
+{#                        <li class="active"><a href="/index/">Home<span class="submenu-indicator"></span></a>#}
+{#                        </li>#}
+{#                        {% if request.session.types == '0' %}#}
+{#                            <li><a href="#">For Candidates<span class="submenu-indicator"></span></a>#}
+{#                                <ul class="nav-dropdown nav-submenu" style="right: auto; display: none;">#}
+{#                                    <li><a href="/find_job/">Search job<span class="submenu-indicator"></span></a>#}
+{#                                    </li>#}
+{#                                    <li><a href="/join_status_list/">Job Status<span#}
+{#                                            class="submenu-indicator"></span></a>#}
+{#                                    </li>#}
+{#                                    <li><a href="/personal/">Candidate Dashboard</a></li>#}
+{#                                    <li><a href="/post_list/">Chat List</a></li>#}
+{#                                    <li><a href="/add_post/">Chat New</a></li>#}
+{#                                </ul>#}
+{#                            </li>#}
+{#                        {% endif %}#}
+{#                        {% if request.session.types == '1' %}#}
+{#                            <li><a href="#">For Employers<span class="submenu-indicator"></span></a>#}
+{#                                <ul class="nav-dropdown nav-submenu" style="right: auto; display: none;">#}
+{#                                    <li><a href="candidate-grid.html">Browse Candidates Grid</a></li>#}
+{#                                    <li><a href="candidate-list.html">Browse Candidates List</a></li>#}
+{#                                    <li><a href="search-freelancers.html">Search Freelancers</a></li>#}
+{#                                    <li><a href="search-freelancers-list.html">Search Freelancers List</a></li>#}
+{#                                    <li><a href="freelancer-detail.html">Freelancer Detail</a></li>#}
+{#                                    <li><a href="#">Search with Map<span class="submenu-indicator"></span></a>#}
+{#                                        <ul class="nav-dropdown nav-submenu" style="display: none;">#}
+{#                                            <li><a href="browse-candidates-with-map-grid.html">Search Candidate Grid</a>#}
+{#                                            </li>#}
+{#                                            <li><a href="browse-candidates-with-map.html">Search Candidate List</a></li>#}
+{#                                        </ul>#}
+{#                                    </li>#}
+{#                                    <li><a href="/e_info/">Employer Dashboard</a></li>#}
+{#                                </ul>#}
+{#                            </li>#}
+{#                        {% endif %}#}
+{#                        {% if request.session.types == '2' %}#}
+{#                            <li><a href="#">For Admin<span class="submenu-indicator"></span></a>#}
+{#                                <ul class="nav-dropdown nav-submenu" style="right: auto; display: none;">#}
+{#                                    <li><a href="/admin_show_account_stu/">Students Page</a></li>#}
+{#                                    <li><a href="/admin_show_account_e/">Employers Page</a></li>#}
+{#                                </ul>#}
+{#                            </li>#}
+{#                        {% endif %}#}
+{##}
+{##}
+{#                    </ul>#}
+
+                             <ul class="nav-menu">
+                            <li ><a href="/index/">Home<span class="submenu-indicator"></span></a>
+                            </li>
+                            {% if request.session.types == '0' %}
+                                    <li ><a href="/find_job/">Search job<span class="submenu-indicator"></span></a>
+                                    </li>
+                                    <li ><a href="/join_status_list/">Job Status<span
+                                                class="submenu-indicator"></span></a>
+                                    </li>
+                                    <li class="active"><a href="/personal/">Candidate Dashboard</a></li>
+                                    <li > <a href="/post_list/">Chat List</a></li>
+                                    <li ><a href="/add_post/">Chat New</a></li>
+                            {% endif %}
+                            {% if request.session.types == '1' %}
+                                    <li class="active"><a href="/e_info/">Employer Dashboard</a></li>
+                            {% endif %}
+                            {% if request.session.types == '2' %}
+                                    <li><a href="/admin_show_account_stu/">Students Page</a></li>
+                                    <li><a href="/admin_show_account_e/">Employers Page</a></li>
+                            {% endif %}
+                        </ul>
+                    <ul class="nav-menu nav-menu-social align-to-right">
+                        {% if request.session.username %}
+                            <li>
+                                <a href="/login/">
+                                    <i class="ti-user mr-1"></i><span
+                                        class="dn-lg">{{ request.session.username }}</span>
+                                </a>
+                            </li>
+                        {% else %}
+                            <li>
+                                <a href="/login/" data-toggle="modal" data-target="#login">
+                                    <i class="ti-user mr-1"></i><span class="dn-lg">Login/Register</span>
+                                </a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navigation -->
+    <div class="clearfix"></div>
+    <!-- ============================================================== -->
+    <!-- Top header  -->
+    <!-- ============================================================== -->
+
+    <!-- ============================ Hero Banner  Start================================== -->
+    <div class="page-title-wrap" style="background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);">
+        <div class="container">
+            <div class="col-lg-12 col-md-12">
+                <div class="pt-caption">
+                    <h1>Hello! {{ request.session.username }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <!-- ============================ Hero Banner End ================================== -->
+
+
+    <!-- ============== Candidate Dashboard ====================== -->
+    <section class="tr-single-detail gray-bg" style="background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);">
+        <div class="container">
+            <div class="row">
+
+                <!-- Sidebar Start -->
+                <div class="col-md-12 col-sm-12">
+                    <div class="dashboard-wrap"
+                         style="background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);">
+
+                        <div class="dashboard-thumb">
+                            <div class="dashboard-th-pic">
+                                <img src="/static/assets/img/user-3.jpg" class="img-fluid mx-auto img-circle" alt=""/>
+                            </div>
+                            <h4 class="mb-1">{{ full_name }}</h4>
+                            <span class="text-success">Web Designer</span>
+                        </div>
+
+                        <!-- Nav tabs -->
+                        <ul class="nav dashboard-verticle-nav row">
+                            <li class="nav-item col-md-3 col-sm-6">
+                                <a class="nav-link active" data-toggle="tab" href="#profile"><i class="ti-user"></i>My
+                                    Profile</a>
+                            </li>
+                            <li class="nav-item col-md-3 col-sm-6">
+                                <a class="nav-link" data-toggle="tab" href="#shortlisted"><i
+                                        class="lni-heart-filled"></i>Shortlisted Job</a>
+                            </li>
+                            <li class="nav-item col-md-3 col-sm-6">
+                                <a class="nav-link" data-toggle="tab" href="#applied"><i class="lni-briefcase"></i>Applied
+                                    jobs</a>
+                            </li>
+                            <li class="nav-item col-md-3 col-sm-4">
+                                <a class="nav-link" data-toggle="tab" href="#change-password"><i class="lni-lock"></i>Change
+                                    Password</a>
+                            </li>
+                            <li class="nav-item col-md-12 col-sm-12" style="text-align: center">
+                                <a class="nav-link" href="/login/"><i class="lni-exit"></i>Log Out</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                {% if d %}{{ d }}{% endif %}
+                <!-- /col-md-4 -->
+
+                <div class="col-md-12 col-sm-12">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+
+                        <!-- My Profile -->
+                        <div class="tab-pane active container" id="profile">
+                            <form action="/personal/" method="post" enctype="multipart/form-data">
+                                <!-- Basic Info -->
+                                <div class="tr-single-box">
+                                    <div class="tr-single-header">
+                                        <h4><i class="ti-desktop"></i> Basic Info</h4>
+                                    </div>
+
+                                    <div class="tr-single-body">
+                                        <div class="row">
+
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <div class="form-group">
+                                                    <label>Full Name</label>
+                                                    <input name='full_name' class="form-control" type="text"
+                                                           value="{{ full_name }}">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <div class="form-group">
+                                                    <label>Job Title</label>
+                                                    <input name='job_title' class="form-control" type="text"
+                                                           value="{{ job_title }}">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Job Tags</label>
+                                                    <input name='job_tags' class="form-control" type="text"
+                                                           value="{{ job_tags }}">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Specialisms</label>
+                                                    <input name='specialisms' class="form-control" type="text"
+                                                           value="{{ specialisms }}">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label>Min Sallery</label>
+                                                    <input name='min_sallery' class="form-control" type="text"
+                                                           value="{{ min_sallery }}">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                                <div class="form-group">
+                                                    <h4>Overview</h4>
+                                                    <textarea name="overview" id="" cols="60" rows="5"
+                                                              value="" placeholder="150 words">{{ overview }}</textarea>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- /Basic Info -->
+
+                                <!-- Contact Info -->
+                                <div class="tr-single-box">
+                                    <div class="tr-single-header">
+                                        <h4><i class="ti-headphone"></i> Contact Info</h4>
+                                    </div>
+
+                                    <div class="tr-single-body">
+                                        <div class="row">
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="social-nfo">Phone Number</label>
+                                                    <input name='phone_number' class="form-control" type="text"
+                                                           value="{{ phone_number }}">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="social-nfo">Email</label>
+                                                    <input name='email' class="form-control" type="text"
+                                                           value="{{ email }}">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="social-nfo">Website</label>
+                                                    <input name='website' class="form-control" type="text"
+                                                           value="{{ website }}">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="social-nfo">Country</label>
+                                                    <input name='country' class="form-control" type="text"
+                                                           value="{{ country }}">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="social-nfo">City</label>
+                                                    <input name='city' class="form-control" type="text"
+                                                           value="{{ city }}">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="social-nfo">Complete Address</label>
+                                                    <input name='address' class="form-control" type="text"
+                                                           value="{{ address }}">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- /Contact Info -->
+
+                                <!-- Advance Information -->
+                                <div class="tr-single-box">
+                                    <div class="tr-single-header">
+                                        <h4><i class="ti-heart"></i> Advance Information</h4>
+                                    </div>
+
+                                    <div class="tr-single-body">
+                                        <div class="row">
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="social-nfo">Experience</label>
+                                                    <input name='experience' class="form-control" type="text"
+                                                           value="{{ experience }}">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="social-nfo">Age</label>
+                                                    <input name='age' class="form-control" type="text"
+                                                           value="{{ age }}">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="social-nfo">Current Salary($)</label>
+                                                    <input name='current_salary' class="form-control" type="text"
+                                                           value="{{ current_salary }}">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="social-nfo">Expected Salary($)</label>
+                                                    <input name='expected_salary' class="form-control" type="text"
+                                                           value="{{ expected_salary }}">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="social-nfo">Languages</label>
+                                                    <input name="languages" class="form-control" type="text"
+                                                           value="{{ languages }}">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="social-nfo">Education Levels</label>
+                                                    <input name='education' class="form-control" type="text"
+                                                           value="{{ education }}">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- /Advance Information -->
+
+                                <button type="submit" class="btn btn-info btn-md full-width">Save & Update<i
+                                        class="ml-2 ti-arrow-right"></i></button>
+                            </form>
+                        </div>
+
+
+                        <!-- shortlisted -->
+                        <div class="tab-pane" id="shortlisted">
+
+                            <div class="tr-single-box">
+                                <div class="tr-single-header">
+                                    <h4><i class="ti-check"></i> Shortlisted Jobs</h4>
+                                </div>
+
+                                <div class="tr-single-body">
+
+                                    <!-- Single Manage List -->
+                                    {% for lw in list_waiting %}
+                                        <div class="manage-list">
+
+                                            <div class="mg-list-wrap">
+                                                <div class="mg-list-thumb">
+                                                    <img src="/static/assets/img/google.png" class="mx-auto" alt=""/>
+                                                </div>
+                                                <div class="mg-list-caption">
+                                                    <h4 class="mg-title">{{ lw.job_title }}</h4>
+                                                    <span class="mg-subtitle">{{ lw.company }}</span>
+                                                    <span>{{ lw.created_at }}</span>
+                                                    <span style="color: red;"><b>{{ lw.pass_status }}</b></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="mg-action">
+                                                <div class="btn-group ml-2">
+                                                    <a href="/job_detail/?job_id={{ lw.job_id }}" class="btn btn-view"
+                                                       data-placement="top" title="View Job"><i class="ti-eye"></i></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- applied job -->
+                        <div class="tab-pane" id="applied">
+
+                            <div class="tr-single-box">
+                                <div class="tr-single-header">
+                                    <h4><i class="ti-briefcase"></i> Applied job</h4>
+                                </div>
+
+                                <div class="tr-single-body">
+
+                                    <!-- Single Manage List -->
+                                    {% for lp in list_pass %}
+                                        <div class="manage-list">
+
+                                            <div class="mg-list-wrap">
+                                                <div class="mg-list-thumb">
+                                                    <img src="/static/assets/img/google.png" class="mx-auto" alt=""/>
+                                                </div>
+                                                <div class="mg-list-caption">
+                                                    <h4 class="mg-title">{{ lp.job_title }}</h4>
+                                                    <span class="mg-subtitle">{{ lp.company }}</span>
+                                                    <span>{{ lp.created_at }}</span>
+                                                    <span style="color: green;"><b>{{ lp.pass_status }}</b></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="mg-action">
+                                                <div class="btn-group ml-2">
+                                                    <a href="/job_detail/?job_id={{ lp.job_id }}" class="btn btn-view"
+                                                       data-toggle="tooltip"
+                                                       data-placement="top" title="View Job"><i class="ti-eye"></i></a>
+                                                    <a href="#" class="mg-delete ml-2" data-toggle="tooltip"
+                                                       data-placement="top" title="Delete"><i class="ti-trash"></i></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- change-password -->
+                        <div class="tab-pane" id="change-password">
+                            <form action="/change_password/" method="post" enctype="multipart/form-data">
+                                <div class="tr-single-box">
+                                    <div class="tr-single-header">
+                                        <h4><i class="lni-lock"></i> Change Password</h4>
+                                    </div>
+
+                                    <div class="tr-single-body">
+                                        <div class="form-group">
+                                            <label>Old Password</label>
+                                            <input name="password" class="form-control" type="password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>New Password</label>
+                                            <input name="new_pwd" class="form-control" type="password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Confirm Password</label>
+                                            <input class="form-control" type="password">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <button type="submit" class="btn btn-info btn-md full-width">Change Update<i
+                                        class="ml-2 ti-arrow-right"></i></button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ============== Candidate Dashboard ====================== -->
+
+    <!-- ============================ Newsletter Start ================================== -->
+    <section class="alert-wrap pt-5 pb-5" style="background: #d11a2d url(/static/assets/img/bg2.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-6">
+                    <div class="jobalert-sec">
+                        <h3 class="mb-1 text-light">Get a suitable job</h3>
+                        <p class="text-light">Dedicated to serving you</p>
+                    </div>
+                </div>
+
+{#                <div class="col-lg-6 col-md-6">#}
+{#                    <div class="input-group">#}
+{#                        <input type="text" class="form-control" placeholder="Enter Your Email">#}
+{#                        <div class="input-group-append">#}
+{#                            <button type="button" class="btn btn-black black">Subscribe</button>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+            </div>
+        </div>
+    </section>
+    <!-- ============================ Newsletter Start ================================== -->
+
+    <!-- ============================ Footer Start ================================== -->
+    <footer class="dark-footer skin-dark-footer">
+   
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-6 col-md-6">
+                        <p class="mb-0">© 2020 Work Stocks. Designd By PixelExperts All Rights Reserved</p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 text-right">
+                        <ul class="footer-bottom-social">
+                            <li><a href="#"><i class="ti-facebook"></i></a></li>
+                            <li><a href="#"><i class="ti-twitter"></i></a></li>
+                            <li><a href="#"><i class="ti-instagram"></i></a></li>
+                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ============================ Footer End ================================== -->
+
+    <!-- Log In Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
+            <div class="modal-content" id="registermodal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="ti-close"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-header-title">SignIn</h4>
+                    <div class="social-login">
+                        <ul>
+                            <li><a href="#" class="btn connect-fb"><i class="ti-facebook"></i>Login with Facebook</a>
+                            </li>
+                            <li><a href="#" class="btn connect-gplus"><i class="ti-google"></i>Login with Gmail</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="devide-wrap"><span>OR</span></div>
+
+                    <div class="login-form">
+                        <form>
+
+                            <div class="form-group">
+                                <label>User Name</label>
+                                <div class="input-with-gray">
+                                    <input type="text" class="form-control" placeholder="Username">
+                                    <i class="ti-user theme-cl"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Password</label>
+                                <div class="input-with-gray">
+                                    <input type="password" class="form-control" placeholder="*******">
+                                    <i class="ti-unlock theme-cl"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-md full-width pop-login">Login</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="mf-link"><i class="ti-user"></i>Haven't An Account?<a href="javascript:void(0)"
+                                                                                      data-toggle="modal"
+                                                                                      data-target="#signup"
+                                                                                      data-dismiss="modal"> Sign Up</a>
+                    </div>
+                    <div class="mf-forget"><a href="#"><i class="ti-help"></i>Forget Password</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="sign-up" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
+            <div class="modal-content" id="sign-up">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="ti-close"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-header-title">Sign Up</h4>
+                    <div class="social-login">
+                        <ul>
+                            <li><a href="#" class="btn connect-fb"><i class="ti-facebook"></i>Login with Facebook</a>
+                            </li>
+                            <li><a href="#" class="btn connect-gplus"><i class="ti-google"></i>Login with Gmail</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="devide-wrap"><span>OR</span></div>
+
+                    <div class="login-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Full Name</label>
+                                        <div class="input-with-gray">
+                                            <input type="text" name="full_name" class="form-control"
+                                                   placeholder="Your Name">
+                                            <i class="ti-user theme-cl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <div class="input-with-gray">
+                                            <input type="email" class="form-control" placeholder="Email ID">
+                                            <i class="ti-user theme-cl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label>User Name</label>
+                                        <div class="input-with-gray">
+                                            <input type="text" class="form-control" placeholder="Username">
+                                            <i class="ti-user theme-cl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <div class="input-with-gray">
+                                            <input type="password" class="form-control" placeholder="*******">
+                                            <i class="ti-unlock theme-cl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary btn-md full-width pop-login">
+                                            Login
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="mf-link"><a><i class="ti-user"></i>Already Have Account? Sign In</a></div>
+                    <div class="mf-forget"><a href="#"><i class="ti-help"></i>Need Help</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal -->
+
+</div>
+<!-- ============================================================== -->
+<!-- End Wrapper -->
+<!-- ============================================================== -->
+
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<script src="/static/assets/js/jquery.min.js"></script>
+<script src="/static/assets/js/popper.min.js"></script>
+<script src="/static/assets/js/bootstrap.min.js"></script>
+<script src="/static/assets/js/select2.min.js"></script>
+<script src="/static/assets/js/aos.js"></script>
+<script src="/static/assets/js/perfect-scrollbar.jquery.min.js"></script>
+<script src="/static/assets/js/owl.carousel.min.js"></script>
+<script src="/static/assets/js/jquery.counterup.min.js"></script>
+<script src="/static/assets/js/slick.js"></script>
+<script src="/static/assets/js/bootstrap-datepicker.js"></script>
+<script src="/static/assets/js/isotope.min.js"></script>
+<script src="/static/assets/js/summernote.js"></script>
+<script src="/static/assets/js/jQuery.style.switcher.js"></script>
+
+<script src="/static/assets/js/counterup.min.js"></script>
+<script src="/static/assets/js/custom.js"></script>
+<!-- ============================================================== -->
+<!-- This page plugins -->
+<!-- ============================================================== -->
+
+<script>
+    $(function () {
+        $('.datepicker').datepicker({
+            format: 'mm-dd-yyyy'
+        });
+    });
+</script>
+
+</body>
+</html>

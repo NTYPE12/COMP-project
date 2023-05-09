@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Work Stocks - Innovative & Modern Job Board Template</title>
+
+    <!-- All Plugins Css -->
+    <link href="/static/assets/css/plugins.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/static/assets/fonts/iconfont.css" />
+    <!-- Custom CSS -->
+    <link href="/static/assets/css/styles.css" rel="stylesheet" />
+
+    <!-- Custom Color -->
+    <link href="/static/assets/css/skin/default.css" rel="stylesheet" />
+    <script src="/static/assets/fonts/iconfont.js"></script>
+  </head>
+
+  <body class="green-skin">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="Loader"></div>
+
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+      <!-- ============================================================== -->
+      <!-- Top header -->
+      <!-- ============================================================== -->
+      <!-- Start Navigation -->
+      <div class="header header-light">
+        <div class="container-fluid">
+          <nav id="navigation" class="navigation navigation-landscape">
+            <div class="nav-header">
+              <a class="nav-brand" href="#"><img src="/static/assets/img/logo.png" class="logo" alt="" /></a>
+              <div class="nav-toggle"></div>
+            </div>
+            <div class="nav-menus-wrapper" style="transition-property: none;">
+              <ul class="nav-menu">
+                <li class="active">
+                  <a href="/index/">Home<span class="submenu-indicator"></span></a>
+                </li>
+                {% if request.session.types == '0' %}
+                  <li>
+                    <a href="/find_job/">Search job<span class="submenu-indicator"></span></a>
+                  </li>
+                  <li>
+                    <a href="/join_status_list/">Job Status<span class="submenu-indicator"></span></a>
+                  </li>
+                  <li>
+                    <a href="/personal/">Candidate Dashboard</a>
+                  </li>
+                  <li>
+                    <a href="/post_list/">Chat List</a>
+                  </li>
+                  <li>
+                    <a href="/add_post/">Chat New</a>
+                  </li>
+                {% endif %}
+                {% if request.session.types == '1' %}
+                  <li class="active">
+                    <a href="/e_info/">Employer Dashboard</a>
+                  </li>
+                {% endif %}
+                {% if request.session.types == '2' %}
+                  <li>
+                    <a href="/admin_show_account_stu/">Students Page</a>
+                  </li>
+                  <li>
+                    <a href="/admin_show_account_e/">Employers Page</a>
+                  </li>
+                {% endif %}
+              </ul>
+
+              <ul class="nav-menu nav-menu-social align-to-right">
+                {% if request.session.username %}
+                  <li>
+                    <a href="/login/"><i class="ti-user mr-1"></i><span class="dn-lg">{{ request.session.username }}</span></a>
+                  </li>
+                {% else %}
+                  <li>
+                    <a href="/login/"><i class="ti-user mr-1"></i><span class="dn-lg">Login/Register</span></a>
+                  </li>
+                {% endif %}
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- End Navigation -->
+      <div class="clearfix"></div>
+      <!-- ============================================================== -->
+      <!-- Top header -->
+      <!-- ============================================================== -->
+
+      <!-- ============================ Hero Banner Start================================== -->
+      <div class="hero-header jumbo-banner text-center" style="background: url(/static/assets/img/banner.jpg);" data-overlay="6">
+        <div class="container">
+          <h1>Find All Jobs in England</h1>
+          <p class="lead">Find Jobs, Employment & Best Career Opportunities</p>
+          <form action="/find_jobs/" method="post" enctype="multipart/form-data" class="search-big-form no-border search-shadow">
+            <div class="row m-0">
+              <div class="col-lg-4 col-md-4 col-sm-12 p-0">
+                <div class="form-group">
+                  <i class="ti-search"></i>
+                  <input name="job_title" type="text" class="form-control b-r" placeholder="Job Title or Keywords" />
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                <div class="form-group">
+                  <i class="ti-location-pin"></i>
+                  <input name="address" type="text" class="form-control b-r" placeholder="Location" />
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                <div class="form-group">
+                  <select name="industry" id="category" class="js-states form-control">
+                    <option value="">&nbsp;</option>
+                    <option value="Development">Development</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Banking">Banking</option>
+                    <option value="SEO/SMO">SEO/SMO</option>
+                    <option value="Designing">Designing</option>
+                    <option value="Management">Management</option>
+                  </select>
+                  <i class="ti-layers"></i>
+                </div>
+              </div>
+
+              <div class="col-lg-2 col-md-2 col-sm-12 p-0">
+                <button type="submit" class="btn btn-primary full-width">Find Jobs</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- ============================ Hero Banner End ================================== -->
+
+      <!-- ============================ Category Start ================================== -->
+      <section class="gray" style="background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <div class="sec-heading mx-auto">
+                <p>Browse Your jobs By Category</p>
+                <h2>Popular Category Jobs</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <ul class="category-wrap">
+              <li>
+                <a href="/find_job/" class="standard-category-box">
+                  {# <i class="iconfont icon-licai"></i> #}
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-licai"></use>
+                  </svg>
+                  <h4>Construction Work</h4>
+{#                  <span>6 new job posted</span>#}
+                </a>
+              </li>
+
+              <li>
+                <a href="/find_job/" class="standard-category-box">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-liuliang"></use>
+                  </svg>
+
+                  <h4>Account / Finance</h4>
+{#                  <span>10 new job posted</span>#}
+                </a>
+              </li>
+
+              <li>
+                <a href="/find_job/" class="standard-category-box">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-zhaopin"></use>
+                  </svg>
+                  <h4>Telecommunications</h4>
+{#                  <span>12 new job posted</span>#}
+                </a>
+              </li>
+
+              <li>
+                <a href="/find_job/" class="standard-category-box">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jiazheng"></use>
+                  </svg>
+                  <h4>Healthcare</h4>
+{#                  <span>6 new job posted</span>#}
+                </a>
+              </li>
+
+              <li>
+                <a href="/find_job/" class="standard-category-box">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-yingshi"></use>
+                  </svg>
+                  <h4>Designing & Jobs</h4>
+{#                  <span>40 new job posted</span>#}
+                </a>
+              </li>
+
+              <li>
+                <a href="/find_job/" class="standard-category-box">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-jiaoyu"></use>
+                  </svg>
+                  <h4>Education Training</h4>
+{#                  <span>8 new job posted</span>#}
+                </a>
+              </li>
+
+              <li>
+                <a href="/find_job/" class="standard-category-box">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-pinche"></use>
+                  </svg>
+                  <h4>Automotive Jobs</h4>
+{#                  <span>16 new job posted</span>#}
+                </a>
+              </li>
+
+              <li>
+                <a href="/find_job/" class="standard-category-box">
+                  <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-ziliao"></use>
+                  </svg>
+                  <h4>Banking Jobs</h4>
+{#                  <span>10 new job posted</span>#}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="clearfix"></div>
+      <!-- ============================ Category End ================================== -->
+      <!-- ============================ Latest job ================================== -->
+      <section style="background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <div class="sec-heading mx-auto">
+                <p>New & Trending Jobs</p>
+                <h2>Most Popular & Trending Jobs</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="owl-carousel" id="job-slide">
+              {% for pp in job_datas %}
+                <!-- Single Job -->
+                <div class="item">
+                  <div class="job-grid style-1">
+                    <div class="job-grid-wrap">
+                      <span class="job-type j-part-time">Part Time</span>
+                      <div class="job-grid-thumb">
+                        <a href="job-detail.html"><img src="/static/assets/img/adwords.png" class="img-fluid mx-auto" alt="" /></a>
+                      </div>
+                      <h4 class="job-title"><a href="job-detail.html">{{ pp.job_title }}</a></h4>
+                      <hr />
+                      <div class="job-grid-detail">
+                        <h4 class="jbc-name"><a href="employer-detail.html">{{ pp.company }}</a></h4>
+                        <p>
+                          <i class="ti-location-pin"></i>{{ pp.address }}
+                        </p>
+                      </div>
+                      <div class="job-grid-footer">
+                        <h4 class="job-price">${{ pp.money_min }}-${{ pp.money_max }}</h4>
+                        <a href="/join_job2/?job_id={{ pp.job_id }}" class="btn btn-outline-info btn-rounded">Apply</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============================ Latest Job End ================================== -->
+
+      <!-- ============================ Counter Facts Start================================== -->
+      <section class="image-bg text-center" style="background:#d11a2d url(/static/assets/img/bg2.png);" data-overlay="0">
+        <div class="container" style="margin-left: 28%;">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 b-r">
+              <div class="count-facts">
+                <h4>{{ jobs_posted }}</h4>
+                <span>Jobs Posted</span>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 b-r">
+              <div class="count-facts">
+                <h4>{{ stunum }}</h4>
+                <span>Students</span>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-6 b-r">
+              <div class="count-facts">
+                <h4>{{ company }}</h4>
+                <span>Companies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ============================ Counter Facts End ================================== -->      <!-- ============================ Counter Facts Start================================== -->
+      <section  style=" url(/static/assets/img/bg2.png);" data-overlay="0" style="margin: 0 auto;" class="row">
+            <div class="col-lg-5 col-md-5 col-sm-6"   id="chart-container" style="height: 400px;margin: 0 auto;">
+
+          </div>
+               <div class="col-lg-5 col-md-5 col-sm-6"   id="chart-container-time" style="height: 400px;margin: 0 auto;">
+          </div>
+      </section>
+      <!-- ============================ Counter Facts End ================================== -->
+
+      <!-- ============================ Popular Jobs Start ================================== -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <div class="sec-heading mx-auto">
+                <p>Browse Popular jobs</p>
+                <h2>Top Trending Jobs</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            {% for jd in job_datas %}
+              <!-- Single Large Job List -->
+              <div class="job-new-list col-lg-4 col-md-4" style="display: flex;flex-direction: column;">
+                <!--          <div class="vc-thumb">
+                                <img class="img-fluid rounded-circle" src="/static/assets/img/adwords.png" alt="c2.jpg">
+                            </div>          -->
+                <div class="vc-content">
+                  <h5 class="title"><a href="/job_detail/?job_id={{ jd.job_id }}">{{ jd.job_title }}</a><span class="j-full-time">Part Time</span></h5>
+                  <p>{{ jd.company }}</p>
+                  <ul class="vc-info-list">
+                    <li class="list-inline-item">
+                      <h5>Sallery</h5> <i class="ti-credit-card"></i>${{ jd.money_min }}k-${{ jd.money_max }}k P.A
+                    </li>
+                    <li class="list-inline-item">
+                      <h5>Skills</h5>
+                      <div class="skills">
+                        {% for ll in jd.job_tags %}
+                          <span>{{ ll }}</span>
+                        {% endfor %}
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <a class="btn btn-primary" style="height:30px;line-height:5px;" href="/job_detail/?job_id={{ jd.job_id }}">Apply Now<i></i></a>
+                <!--          <a class="btn btn-primary bn-det" href="/job_detail/?job_id={{ jd.job_id }}">Apply Now<i
+                                class="ti-arrow-right ml-1"></i></a>          -->
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+      <div class="clearfix"></div>
+      <!-- ============================ Popular Jobs End ================================== -->
+
+      <!-- ============================ Newsletter Start ================================== -->
+      <section class="alert-wrap pt-5 pb-5" style="background: #d11a2d url(/static/assets/img/bg2.png);">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-8">
+              <div class="jobalert-sec">
+                <h3 class="mb-1 text-light">Get a suitable job</h3>
+                <p class="text-light">Dedicated to serving you</p>
+              </div>
+            </div>
+
+            <!--          <div class="col-lg-6 col-md-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter Your Email">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-black black">Subscribe</button>
+                        </div>
+                    </div>
+                </div>          -->
+          </div>
+        </div>
+      </section>
+      <!-- ============================ Newsletter Start ================================== -->
+
+      <!-- ============================ Footer Start ================================== -->
+      <footer class="dark-footer skin-dark-footer">
+        {# <div> #}
+        {# <div class="container"> #}
+        {# <div class="row"> #}
+        {#  #}
+        {# <div class="col-lg-3 col-md-3"> #}
+        {# <div class="footer-widget"> #}
+        {# <img src="/static/assets/img/logo-light.png" class="img-footer" alt="" /> #}
+        {# <div class="footer-add"> #}
+        {# <p>Collins Street West, Victoria,</br> Australia (AU4578).</p> #}
+        {# <p><strong>Email:</strong></br><a href="#">hello@workstock.com</a></p> #}
+        {# <p><strong>Call:</strong></br>91 855 742 62548</p> #}
+        {# </div> #}
+        {#  #}
+        {# </div> #}
+        {# </div> #}
+        {# <div class="col-lg-2 col-md-2"> #}
+        {# <div class="footer-widget"> #}
+        {# <h4 class="widget-title">Navigations</h4> #}
+        {# <ul class="footer-menu"> #}
+        {# <li><a href="#">New Home Design</a></li> #}
+        {# <li><a href="#">Browse Candidates</a></li> #}
+        {# <li><a href="#">Browse Employers</a></li> #}
+        {# <li><a href="#">Advance Search</a></li> #}
+        {# <li><a href="#">Job With Map</a></li> #}
+        {# </ul> #}
+        {# </div> #}
+        {# </div> #}
+        {#  #}
+        {# <div class="col-lg-2 col-md-2"> #}
+        {# <div class="footer-widget"> #}
+        {# <h4 class="widget-title">The Highlights</h4> #}
+        {# <ul class="footer-menu"> #}
+        {# <li><a href="#">Home Page 2</a></li> #}
+        {# <li><a href="#">Home Page 3</a></li> #}
+        {# <li><a href="#">Home Page 4</a></li> #}
+        {# <li><a href="#">Home Page 5</a></li> #}
+        {# <li><a href="#">LogIn</a></li> #}
+        {# </ul> #}
+        {# </div> #}
+        {# </div> #}
+        {#  #}
+        {# <div class="col-lg-2 col-md-2"> #}
+        {# <div class="footer-widget"> #}
+        {# <h4 class="widget-title">My Account</h4> #}
+        {# <ul class="footer-menu"> #}
+        {# <li><a href="#">Dashboard</a></li> #}
+        {# <li><a href="#">Applications</a></li> #}
+        {# <li><a href="#">Packages</a></li> #}
+        {# <li><a href="#">resume.html</a></li> #}
+        {# <li><a href="#">SignUp Page</a></li> #}
+        {# </ul> #}
+        {# </div> #}
+        {# </div> #}
+        {#  #}
+        {# <div class="col-lg-3 col-md-3"> #}
+        {# <div class="footer-widget"> #}
+        {# <h4 class="widget-title">Download Apps</h4> #}
+        {# <a href="#" class="other-store-link"> #}
+        {# <div class="other-store-app"> #}
+        {# <div class="os-app-icon"> #}
+        {# <i class="ti-android theme-cl"></i> #}
+        {# </div> #}
+        {# <div class="os-app-caps"> #}
+        {# Google Play #}
+        {# <span>Get It Now</span> #}
+        {# </div> #}
+        {# </div> #}
+        {# </a> #}
+        {# <a href="#" class="other-store-link"> #}
+        {# <div class="other-store-app"> #}
+        {# <div class="os-app-icon"> #}
+        {# <i class="ti-apple theme-cl"></i> #}
+        {# </div> #}
+        {# <div class="os-app-caps"> #}
+        {# App Store #}
+        {# <span>Now it Available</span> #}
+        {# </div> #}
+        {# </div> #}
+        {# </a> #}
+        {# </div> #}
+        {# </div> #}
+        {#  #}
+        {# </div> #}
+        {# </div> #}
+        {# </div> #}
+
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 col-md-6">
+                <p class="mb-0">© 2020 Work Stocks. Designd By PixelExperts All Rights Reserved</p>
+              </div>
+
+              <div class="col-lg-6 col-md-6 text-right">
+                <ul class="footer-bottom-social">
+                  <li>
+                    <a href="#"><i class="ti-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ti-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ti-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ti-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- ============================ Footer End ================================== -->
+
+      <!-- Log In Modal -->
+      <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="registermodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
+          <div class="modal-content" id="registermodal">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="ti-close"></i></span></button>
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-header-title">SignIn</h4>
+              <div class="social-login">
+                <ul>
+                  <li>
+                    <a href="#" class="btn connect-fb"><i class="ti-facebook"></i>Login with Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn connect-gplus"><i class="ti-google"></i>Login with Gmail</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="devide-wrap">
+                <span>OR</span>
+              </div>
+
+              <div class="login-form">
+                <form>
+                  <div class="form-group">
+                    <label>User Name</label>
+                    <div class="input-with-gray">
+                      <input type="text" class="form-control" placeholder="Username" />
+                      <i class="ti-user theme-cl"></i>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Password</label>
+                    <div class="input-with-gray">
+                      <input type="password" class="form-control" placeholder="*******" />
+                      <i class="ti-unlock theme-cl"></i>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-md full-width pop-login">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="mf-link">
+                <i class="ti-user"></i>Haven't An Account?<a href="javascript:void(0)" data-toggle="modal" data-target="#signup" data-dismiss="modal">Sign Up</a>
+              </div>
+              <div class="mf-forget">
+                <a href="#"><i class="ti-help"></i>Forget Password</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+
+      <!-- Sign Up Modal -->
+      <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="sign-up" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
+          <div class="modal-content" id="sign-up">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="ti-close"></i></span></button>
+            </div>
+            <div class="modal-body">
+              <h4 class="modal-header-title">Sign Up</h4>
+              <div class="social-login">
+                <ul>
+                  <li>
+                    <a href="#" class="btn connect-fb"><i class="ti-facebook"></i>Login with Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#" class="btn connect-gplus"><i class="ti-google"></i>Login with Gmail</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="devide-wrap">
+                <span>OR</span>
+              </div>
+
+              <div class="login-form">
+                <form>
+                  <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div class="form-group">
+                        <label>Full Name</label>
+                        <div class="input-with-gray">
+                          <input type="text" class="form-control" placeholder="Your Name" />
+                          <i class="ti-user theme-cl"></i>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                      <div class="form-group">
+                        <label>Email</label>
+                        <div class="input-with-gray">
+                          <input type="email" class="form-control" placeholder="Email ID" />
+                          <i class="ti-user theme-cl"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <div class="form-group">
+                        <label>User Name</label>
+                        <div class="input-with-gray">
+                          <input type="text" class="form-control" placeholder="Username" />
+                          <i class="ti-user theme-cl"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <div class="form-group">
+                        <label>Password</label>
+                        <div class="input-with-gray">
+                          <input type="password" class="form-control" placeholder="*******" />
+                          <i class="ti-unlock theme-cl"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-md full-width pop-login">Login</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <div class="mf-link">
+                <a><i class="ti-user"></i>Already Have Account? Sign In</a>
+              </div>
+              <div class="mf-forget">
+                <a href="#"><i class="ti-help"></i>Need Help</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="/static/assets/js/jquery.min.js"></script>
+    <script src="/static/assets/js/popper.min.js"></script>
+    <script src="/static/assets/js/bootstrap.min.js"></script>
+    <script src="/static/assets/js/select2.min.js"></script>
+    <script src="/static/assets/js/aos.js"></script>
+    <script src="/static/assets/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="/static/assets/js/owl.carousel.min.js"></script>
+    <script src="/static/assets/js/jquery.counterup.min.js"></script>
+    <script src="/static/assets/js/slick.js"></script>
+    <script src="/static/assets/js/bootstrap-datepicker.js"></script>
+    <script src="/static/assets/js/isotope.min.js"></script>
+    <script src="/static/assets/js/summernote.js"></script>
+    <script src="/static/assets/js/jQuery.style.switcher.js"></script>
+
+    <script src="/static/assets/js/counterup.min.js"></script>
+    <script src="/static/assets/js/custom.js"></script>
+    <!-- ============================================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.2/echarts.min.js"></script>
+
+    <script type="text/javascript">
+        let jobs_posted={{ jobs_posted }};
+        let company={{ company }};
+        let Students={{ stunum }}
+    // 初始化echarts图表并赋值到div容器中
+    var chart = echarts.init(document.getElementById('chart-container'));
+let XData = ["Jobs Posted",'Students', "Companies"];
+let YData =  [jobs_posted, Students,company];
+const rankData = {
+   90: 1,
+   80: 2,
+   70: 3,
+   45: 4,
+   30: 5
+}
+
+let option = {
+   tooltip: {
+      trigger: 'axis',
+      backgroundColor: '#fff',
+      axisPointer: {
+         type: 'shadow' // 可选为：'line' | 'shadow'
+      },
+      padding: 0,
+
+      textStyle: {
+         color: 'rgba(0, 0, 0, .8)'
+      }
+   },
+
+   xAxis: {
+      type: 'category',
+      splitLine: { show: false },
+      axisLine: {
+         lineStyle: {
+            color: 'rgba(0, 0, 0, .5)'
+         }
+      },
+      axisTick: {
+         lineStyle: {
+            color: 'rgba(0, 0, 0, .5)'
+         }
+      },
+      data: XData
+   },
+   yAxis: {
+      type: 'value',
+      axisLine: {
+         show: false,
+         lineStyle: {
+            color: 'rgba(0, 0, 0, .5)',
+         }
+      },
+       minInterval: 1,
+      axisTick: {
+         show: false,
+      },
+      axisLabel: {
+         fontSize: 16,
+         // 分数与排名怎么对应？试了一个曲线还挺像，具体情况根据项目自定义 formatter 函数
+
+      }
+   },
+   series: [
+      {
+         type: 'bar',
+         barWidth: 25,
+         itemStyle: {
+            color: 'rgba(42, 130, 228, 1)'
+         },
+         data: YData
+      }
+   ]
+};
+
+    // 使用刚刚定义的配置项和数据配置图表
+    chart.setOption(option);
+            let fulltime={{ fulltime }};
+        let parttime={{ parttime }}
+    var charttime = echarts.init(document.getElementById('chart-container-time'));
+let xDatatime = ["full Time",'part Time'];
+const colorList = ['#4D88FE', '#50CCCB', '#FFBF3C'];
+let optiontime = {
+  tooltip: {
+    trigger: 'item'
+  },
+  legend: {
+    top: '5%',
+    left: 'center'
+  },
+  series: [
+    {
+      name: 'Access From',
+      type: 'pie',
+      radius: ['40%', '70%'],
+      avoidLabelOverlap: false,
+      itemStyle: {
+        borderRadius: 10,
+        borderColor: '#fff',
+        borderWidth: 2
+      },
+      label: {
+        show: false,
+        position: 'center'
+      },
+      emphasis: {
+        label: {
+          show: true,
+          fontSize: 20,
+          fontWeight: 'bold'
+        }
+      },
+      labelLine: {
+        show: false
+      },
+      data: [
+        { value: fulltime, name: 'Full Time' },
+        { value: parttime, name: 'Part Time' },
+      ]
+    }
+  ]
+};
+
+
+    // 使用刚刚定义的配置项和数据配置图表
+    charttime.setOption(optiontime);
+</script>
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+  </body>
+
+</html>

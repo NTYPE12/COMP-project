@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="488ee24a-155b-4e2d-996d-a5bd1dffa351" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/job2023(2).iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31dd919e-49ec-4a54-a037-2d12a94c2fcf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/31dd919e-49ec-4a54-a037-2d12a94c2fcf/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/job2023.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/job2023.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/all-jobs.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/all-jobs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/blog-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/blog-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/candidate-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/candidate-dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/candidate-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/candidate-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/candidate-list-e.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/candidate-list-e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/candidate-list-job-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/candidate-list-job-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/candidate-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/candidate-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/employer-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/employer-dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/employers-full-width.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/employers-full-width.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/employers-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/employers-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/freelancer-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/freelancer-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/index-admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/index-admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/index-e.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/index-e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/job-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/job-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/job-join-status.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/job-join-status.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/pricing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/search-with-sidebar-list-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/search-with-sidebar-list-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/shortcodes.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/shortcodes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/job/view-candidate-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/job/view-candidate-profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/css/plugins.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/plugins.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/css/skin/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/skin/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/Atlassian.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/Atlassian.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/adwords.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/adwords.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/asana.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/asana.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/banner.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/banner.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/drive.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/drive.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/google.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/google.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/logo-light.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/logo-light.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-8.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/assets/img/user-9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/img/user-9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/candidate-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/candidate-dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/candidate-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/candidate-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/candidate-list-e.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/candidate-list-e.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/candidate-list-job-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/candidate-list-job-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/candidate-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/candidate-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/employer-dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/employer-dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/employers-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/employers-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/job-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/job-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/job-join-status.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/job-join-status.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/post_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/post_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/search-with-sidebar-list-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/search-with-sidebar-list-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job/view-candidate-profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job/view-candidate-profile.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/job2023$pyyyy.coverage" NAME="pyyyy Coverage Results" MODIFIED="1680442613352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/templates/httttt" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4056">
+              <caret line="106" column="11" selection-start-line="106" selection-start-column="11" selection-end-line="106" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="365" column="35" selection-start-line="365" selection-start-column="35" selection-end-line="365" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job2023/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4017">
+              <caret line="104" column="1" selection-start-line="104" selection-start-column="1" selection-end-line="130" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/job/post_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="2" selection-start-line="2" selection-end-line="30" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/job2023/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1521">
+              <caret line="43" column="42" selection-start-line="43" selection-end-line="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/图片url.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/4合1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/变体三剑客.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="897">
+              <caret line="23" column="63" selection-start-line="17" selection-start-column="8" selection-end-line="23" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/添加图片url(1).html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="16" selection-start-line="16" selection-end-line="35" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/添加变体(1).html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="15" selection-start-column="15" selection-end-column="15" />
+              <folding>
+                <element signature="n#form#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>account</find>
+      <find>view</find>
+      <find>job</find>
+      <find>short</find>
+      <find>Web Designer</find>
+      <find>Applied job</find>
+      <find>join_status_list</find>
+      <find>Most Popular &amp; Trending Jobs</find>
+      <find>702</find>
+      <find>search</find>
+      <find>search-with-sidebar-list-2.html</find>
+      <find>resume-detail.html</find>
+      <find>Top Trending Jobs</find>
+      <find>package</find>
+      <find>red</find>
+      <find>lam</find>
+      <find>admin_show_account_e</find>
+      <find>profile</find>
+      <find>password</find>
+      <find>change-password</find>
+      <find>change-pass</find>
+      <find>adam</find>
+      <find>join</find>
+      <find>&lt;!-- ============================ Testimonial  Start================================== --&gt;</find>
+      <find>search-with-sidebar-list-2</find>
+      <find>user_id</find>
+      <find>```</find>
+      <find>JOB CATEGORY</find>
+      <find>jquery</find>
+      <find>&lt;form</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>/static</replace>
+      <replace>&lt;li&gt;&lt;a href=&quot;/personal/&quot;&gt;Candidate Dashboard&lt;/a&gt;&lt;/li&gt;</replace>
+      <replace>default</replace>
+      <replace>&lt;input type=&quot;text&quot; name=&quot;full_name&quot;</replace>
+      <replace>&lt;input type=&quot;text&quot; name=&quot;user_name&quot;</replace>
+      <replace>{{ d.</replace>
+      <replace />
+      <replace>/find_job/</replace>
+      <replace>#</replace>
+      <replace>&lt;input readonly=&quot;readonly&quot; name</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>E:\job2023</dir>
+      <dir>E:\job2023\templates\job</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/job/index-admin.html" />
+        <option value="$PROJECT_DIR$/templates/job/index-e.html" />
+        <option value="$PROJECT_DIR$/job2023/settings.py" />
+        <option value="$PROJECT_DIR$/templates/job/candidate-list-e.html" />
+        <option value="$PROJECT_DIR$/templates/job/employers-list.html" />
+        <option value="$PROJECT_DIR$/templates/job/employer-dashboard.html" />
+        <option value="$PROJECT_DIR$/templates/job/job-detail.html" />
+        <option value="$PROJECT_DIR$/api/forms.py" />
+        <option value="$PROJECT_DIR$/api/models.py" />
+        <option value="$PROJECT_DIR$/templates/job/posts.html" />
+        <option value="$PROJECT_DIR$/templates/job/post_list.html" />
+        <option value="$PROJECT_DIR$/templates/job/post_detail.html" />
+        <option value="$PROJECT_DIR$/templates/job/comments.html" />
+        <option value="$PROJECT_DIR$/templates/job/base.html" />
+        <option value="$PROJECT_DIR$/job2023/urls.py" />
+        <option value="$PROJECT_DIR$/api/views.py" />
+        <option value="$PROJECT_DIR$/templates/job/candidate-dashboard.html" />
+        <option value="$PROJECT_DIR$/templates/job/candidate-grid.html" />
+        <option value="$PROJECT_DIR$/templates/job/candidate-list.html" />
+        <option value="$PROJECT_DIR$/templates/job/candidate-list-job-list.html" />
+        <option value="$PROJECT_DIR$/templates/job/index.html" />
+        <option value="$PROJECT_DIR$/templates/job/job-join-status.html" />
+        <option value="$PROJECT_DIR$/templates/job/search-with-sidebar-list-2.html" />
+        <option value="$PROJECT_DIR$/templates/job/view-candidate-profile.html" />
+        <option value="$PROJECT_DIR$/templates/job/register.html" />
+        <option value="$PROJECT_DIR$/templates/job/login.html" />
+        <option value="$PROJECT_DIR$/templates/httttt/createproduct.html" />
+        <option value="$PROJECT_DIR$/templates/httttt/createproductold.html" />
+        <option value="$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/会员价格.py" />
+        <option value="$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/createproduct(2).html" />
+        <option value="$PROJECT_DIR$/templates/httttt/pyyyy.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
+  </component>
+  <component name="ProjectId" id="2PRaYo7hDBWCgLufLyotbnoTN7z" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="job2023" type="b2602c69:ProjectViewProjectNode" />
+              <item name="job2023" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="job2023" type="b2602c69:ProjectViewProjectNode" />
+              <item name="job2023" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="job2023" type="b2602c69:ProjectViewProjectNode" />
+              <item name="job2023" type="462c0819:PsiDirectoryNode" />
+              <item name="job2023" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="job2023" type="b2602c69:ProjectViewProjectNode" />
+              <item name="job2023" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="job2023" type="b2602c69:ProjectViewProjectNode" />
+              <item name="job2023" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="job" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\job2023\templates\httttt" />
+      <recent name="E:\job2023\templates\job" />
+      <recent name="E:\job2023" />
+      <recent name="E:\job2023\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\job2023\templates\httttt" />
+      <recent name="E:\job2023\static" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django 服务器.job2023">
+    <configuration name="createproduct.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/job2023/templates/httttt/createproduct.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="createproductold.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/job2023/templates/httttt/createproductold.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="index-admin.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/job2023/templates/job/index-admin.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="register.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/job2023/templates/job/register.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="pyyyy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="job2023" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\mykai\AppData\Local\Programs\Python\Python311\python.exe" />
+      <option name="SDK_NAME" value="Python 3.11" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/templates/httttt" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/templates/httttt/pyyyy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="job2023" type="Python.DjangoServer" factoryName="Django server">
+      <module name="job2023" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="job2023.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django 服务器.job2023" />
+      <item itemvalue="JavaScript 调试.createproduct.html" />
+      <item itemvalue="JavaScript 调试.createproductold.html" />
+      <item itemvalue="JavaScript 调试.index-admin.html" />
+      <item itemvalue="JavaScript 调试.register.html" />
+      <item itemvalue="Python.pyyyy" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.pyyyy" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="488ee24a-155b-4e2d-996d-a5bd1dffa351" name="Default Changelist" comment="" />
+      <created>1678449571059</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678449571059</updated>
+      <workItem from="1683422400623" duration="221000" />
+      <workItem from="1683422635441" duration="11869000" />
+      <workItem from="1683453077148" duration="9000" />
+      <workItem from="1683459673420" duration="7092000" />
+      <workItem from="1683468454298" duration="984000" />
+      <workItem from="1683553624589" duration="8209000" />
+      <workItem from="1683561885895" duration="2712000" />
+      <workItem from="1683565189286" duration="2956000" />
+      <workItem from="1683594237988" duration="1927000" />
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16957104" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.31444758" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.31995663" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="5" />
+      <window_info anchor="bottom" id="Docker" order="6" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="SciView" order="0" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="1" weight="0.32942432" />
+      <window_info anchor="right" id="Remote Host" order="2" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17857143" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.31444758" />
+      <window_info anchor="bottom" id="Database Changes" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.31995663" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="5" />
+      <window_info anchor="bottom" id="Docker" order="6" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="9" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.39943343" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="SciView" order="0" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="1" weight="0.32942432" />
+      <window_info anchor="right" id="Remote Host" order="2" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/job/shortcodes.html" />
+    <entry file="file://$PROJECT_DIR$/templates/job/pricing.html" />
+    <entry file="file://$PROJECT_DIR$/templates/job/employers-full-width.html" />
+    <entry file="file://$PROJECT_DIR$/templates/job/index-admin.html" />
+    <entry file="file://$PROJECT_DIR$/templates/job/index-e.html" />
+    <entry file="file://F:/Program Files (x86)/anaconda/envs/py37/Lib/site-packages/django/shortcuts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://31dd919e-49ec-4a54-a037-2d12a94c2fcf/schema/main/table/api_joinwork" />
+    <entry file="file://$PROJECT_DIR$/static/assets/js/aos.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/post_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="11" column="85" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="56" column="78" lean-forward="true" selection-start-line="55" selection-start-column="36" selection-end-line="56" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/candidate-dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="56" column="78" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/candidate-grid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="56" column="78" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/candidate-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="56" column="78" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/candidate-list-e.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1206">
+          <caret line="416" column="75" selection-start-line="416" selection-start-column="75" selection-end-line="416" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/candidate-list-job-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="56" column="78" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/comments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/employer-dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9057">
+          <caret line="331" column="36" selection-start-line="331" selection-start-column="35" selection-end-line="331" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/employers-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="57" column="78" selection-start-line="57" selection-start-column="78" selection-end-line="57" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/job-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7161">
+          <caret line="231" column="42" selection-start-line="231" selection-start-column="42" selection-end-line="231" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/job-join-status.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1736">
+          <caret line="56" column="78" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1426">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://31dd919e-49ec-4a54-a037-2d12a94c2fcf/schema/main/table/api_post">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1426">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/search-with-sidebar-list-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1736">
+          <caret line="56" column="78" selection-start-line="56" selection-start-column="78" selection-end-line="56" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/view-candidate-profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1953">
+          <caret line="63" column="78" selection-start-line="63" selection-start-column="78" selection-end-line="63" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://31dd919e-49ec-4a54-a037-2d12a94c2fcf/schema/main/table/api_comment">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/createproduct.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/httttt/createproduct.html" />
+    <entry file="file://$PROJECT_DIR$/templates/httttt/添加主图片.html" />
+    <entry file="file://$PROJECT_DIR$/templates/httttt/添加变体.html" />
+    <entry file="file://$PROJECT_DIR$/templates/httttt/添加图片url(1).html" />
+    <entry file="file://$PROJECT_DIR$/templates/httttt/添加图片url.html" />
+    <entry file="file://$PROJECT_DIR$/templates/httttt/createproductold.html" />
+    <entry file="file://$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/会员价格.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2223">
+          <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/createproduct(2).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5226">
+          <caret line="134" column="1" selection-start-line="134" selection-start-column="1" selection-end-line="134" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/httttt/pyyyy.py" />
+    <entry file="file://$PROJECT_DIR$/api/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4056">
+          <caret line="106" column="11" selection-start-line="106" selection-start-column="11" selection-end-line="106" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job2023/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4017">
+          <caret line="104" column="1" selection-start-line="104" selection-start-column="1" selection-end-line="130" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/job/post_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="2" selection-start-line="2" selection-end-line="30" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/job2023/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1521">
+          <caret line="43" column="42" selection-start-line="43" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/图片url.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/4合1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/变体三剑客.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="23" column="63" selection-start-line="17" selection-start-column="8" selection-end-line="23" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/添加图片url(1).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="16" selection-start-line="16" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../WeChat Files/shoujimeng5038/FileStorage/File/2023-04/添加变体(1).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+          <folding>
+            <element signature="n#form#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="365" column="35" selection-start-line="365" selection-start-column="35" selection-end-line="365" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
